@@ -1,10 +1,10 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useInView } from "react-intersection-observer";
 
 interface Props {
-  src: string;
+  src: StaticImageData;
   width: number;
   height: number;
   index: number;
