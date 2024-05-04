@@ -75,7 +75,7 @@ export const Skill_data: Skill[] = [
 ];
 
 export const Socials = [
-  { name: "VK", src: "@/public/vk.svg" },
+  { name: "VK", src: "../public/vk.svg" },
   { name: "GitHub", src: "/gitwhite.png" },
   { name: "Telegram", src: "/telegram.svg" },
 ];
