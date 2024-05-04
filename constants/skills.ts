@@ -1,3 +1,7 @@
+import vk from "@/public/vk.svg";
+import tg from "@/public/telegram.svg";
+import gh from "@/public/gitwhite.png";
+
 interface Skill {
   name: string;
   image: string;
@@ -75,7 +79,7 @@ export const Skill_data: Skill[] = [
 ];
 
 export const Socials = [
-  { name: "VK", src: "../public/vk.svg" },
-  { name: "GitHub", src: "/gitwhite.png" },
-  { name: "Telegram", src: "/telegram.svg" },
+  { name: "VK", src: { vk } },
+  { name: "GitHub", src: { gh } },
+  { name: "Telegram", src: { tg } },
 ];
