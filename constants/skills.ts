@@ -1,6 +1,19 @@
+import htmlImg from "@/public/html.png";
+import cssImg from "@/public/css.png";
+import jsImg from "@/public/js.png";
+import reactImg from "@/public/react.png";
+import reduxImg from "@/public/redux.png";
+import tsImg from "@/public/ts.png";
+import nextImg from "@/public/next.png";
+import framerMotionImg from "@/public/framer.png";
+import sqlImg from "@/public/mysql.png";
+import figmaImg from "@/public/figma.png";
+
+import { StaticImageData } from "next/image";
+
 interface Skill {
   name: string;
-  image: string;
+  image: StaticImageData;
   width: number;
   height: number;
 }
@@ -8,74 +21,62 @@ interface Skill {
 export const Skill_data: Skill[] = [
   {
     name: "HTML 5",
-    image: "/html.png",
+    image: htmlImg,
     width: 80,
     height: 80,
   },
   {
     name: "CSS",
-    image: "/css.png",
+    image: cssImg,
     width: 80,
     height: 80,
   },
   {
     name: "JS",
-    image: "/js.png",
+    image: jsImg,
     width: 65,
     height: 65,
   },
   {
     name: "React",
-    image: "/react.png",
+    image: reactImg,
     width: 80,
     height: 80,
   },
   {
     name: "Redux",
-    image: "/redux.png",
+    image: reduxImg,
     width: 65,
     height: 65,
   },
   {
     name: "TS",
-    image: "/ts.png",
+    image: tsImg,
     width: 80,
     height: 80,
   },
   {
     name: "NEXT.js",
-    image: "/next.png",
+    image: nextImg,
     width: 80,
     height: 80,
   },
   {
     name: "Framer Motion",
-    image: "/framer.png",
+    image: framerMotionImg,
     width: 80,
     height: 80,
   },
   {
     name: "My SQL",
-    image: "/mysql.png",
-    width: 80,
-    height: 80,
-  },
-  {
-    name: "Docker",
-    image: "/docker.webp",
+    image: sqlImg,
     width: 80,
     height: 80,
   },
   {
     name: "Figma",
-    image: "/figma.png",
+    image: figmaImg,
     width: 50,
     height: 50,
   },
-];
-
-export const Socials = [
-  { name: "VK", src: "/vk.svg" },
-  { name: "GitHub", src: "/gitwhite.png" },
-  { name: "Telegram", src: "/telegram.svg" },
 ];
