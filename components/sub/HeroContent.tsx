@@ -8,6 +8,8 @@ import {
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import mainIcons from "@/public/mainIconsdark.svg";
+
 export default function HeroContent() {
   return (
     <motion.div
@@ -62,13 +64,7 @@ export default function HeroContent() {
         variants={slideInFromRight(0.8)}
         className="w-full h-full flex justify-center items-center"
       >
-        <Image
-          src="/mainIconsDark.svg"
-          alt="icons"
-          height={650}
-          width={650}
-          priority
-        />
+        <Image src={mainIcons} alt="icons" height={650} width={650} priority />
       </motion.div>
     </motion.div>
   );
