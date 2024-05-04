@@ -1,6 +1,9 @@
-import { Socials } from "@/constants/skills";
 import Image from "next/image";
 import navLogo from "@/public/NavLogo.png";
+
+import vk from "@/public/vk.svg";
+import tg from "@/public/telegram.svg";
+import gh from "@/public/gitwhite.png";
 
 export default function Navbar() {
   return (
@@ -35,15 +38,11 @@ export default function Navbar() {
           </div>
         </div>
         <div className="flex flex-row gap-5">
-          {Socials.map((social) => (
-            <Image
-              src={social.src}
-              key={social.name}
-              width={24}
-              height={24}
-              alt={social.name}
-            />
-          ))}
+          <Image src={vk} width={24} height={24} alt="vk" />
+
+          <Image src={tg} width={24} height={24} alt="telegram" />
+
+          <Image src={gh} width={24} height={24} alt="github" />
         </div>
       </div>
     </nav>
