@@ -1,5 +1,6 @@
 import { Socials } from "@/constants/skills";
 import Image from "next/image";
+import navLogo from "@/public/NavLogo.png";
 
 export default function Navbar() {
   return (
@@ -10,7 +11,7 @@ export default function Navbar() {
           className="h-auto w-auto flex flex-row gap-1 items-center"
         >
           <Image
-            src={"/NavLogo.png"}
+            src={navLogo}
             alt="logo"
             width={70}
             height={70}
